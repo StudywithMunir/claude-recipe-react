@@ -8,7 +8,7 @@ import { getRecipeFromMistral } from '../modules/ai';
 function Form() {
 
     const [ingredients,setIngredients] = useState(
-        ["rice","chicken","tomato","yogurt"]
+        []
     ); //ingredients array with default values
 
     // this state will store Ai response
@@ -39,7 +39,7 @@ function Form() {
             <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
-                    placeholder="e.g. oregano"
+                    placeholder="e.g. oregano (add atleast more than 3 ingredients)"
                     aria-label="Add ingredient"
                     name="ingredient"
                 />
